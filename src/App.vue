@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
-    
+  <div>
     <AppHeader />
-    <CourseList />
+    <div id="app">
+      <CourseList />
+    </div>
   </div>
-  
 </template>
 
 <script setup>
