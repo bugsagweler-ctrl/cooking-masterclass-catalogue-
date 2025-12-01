@@ -48,8 +48,12 @@ function toggleSave() {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 5px;
-  color:aliceblue;
+  color: aliceblue;
   background-color: #363622;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make all cards same height */
+  max-width: 100%; /* Prevent cards from getting too wide */
 }
 
 .course-img {
@@ -58,6 +62,7 @@ function toggleSave() {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 0.75rem;
+  flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .soldOut {
@@ -75,7 +80,8 @@ function toggleSave() {
 }
 
 button {
-  margin-top: 1rem;
+  margin-top: auto; /* Push button to bottom */
   padding: 0.5rem 1rem;
+  width: 100%;
 }
 </style>

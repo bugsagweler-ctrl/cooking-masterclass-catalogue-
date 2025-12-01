@@ -43,15 +43,34 @@ wishlist.$subscribe((mutation, state) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;            /* Ensure it stretches full width */
+  width: 100%;
   padding: 1rem;
   background-color: #f5f5f5;
+  gap: 1rem; /* Add gap between items */
 }
+
+.wishlist {
+  text-align: right;
+  flex-shrink: 0; /* Prevent wishlist from shrinking too much */
+  min-width: 150px;
+}
+
 .added-msg {
   color: green;
   font-weight: bold;
   display: block;
   margin-top: 5px;
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .wishlist {
+    text-align: center;
+  }
 }
 </style>
