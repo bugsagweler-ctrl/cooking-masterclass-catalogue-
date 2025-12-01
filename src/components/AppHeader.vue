@@ -44,9 +44,9 @@ wishlist.$subscribe((mutation, state) => {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  gap: 1rem; /* Add gap between items */
+  background: #f5f5f5;
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
 .wishlist {
